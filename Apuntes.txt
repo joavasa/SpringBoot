@@ -1,1 +1,35 @@
-SpringBoot es una extension de SpringFramework
+SpringBoot es una extension de SpringFramework para el desarrollo de aplicaciones.
+
+SpringFramework
+Caracteristicas:
+- Inversion de Control (IoC)
+- Inyeccion de dependencias.
+
+SpringBoot
+Caracteristicas:
+- Autoconfiguración.
+- Gestión de dependencias integradas.
+- Servidow web embebido(Tomcat)
+
+Herramientas para implementar la aplicacion
+- JDK
+- IDE
+- POSTMAN: herramienta que permite crear, probar, documentar y compartir APIs(RESTfull basado en http)
+
+Spring Initializr (https://start.spring.io/)
+- Especificamos las dependencias, la vesion de sb, el lenguaje de programación(java, kotlin, groovy) y el sistema de construcción(Maven o Gradle).
+
+Empaquetamientos 
+JAR: es un formato de archivo que ejecuta la aplicacion de forma independiente.
+- Contiene un servidor web incorporado(tomcat, jetty, undertow)
+- Usarlas en aplicaciones autonomas que no requieran un servidor de aplicaciones y web externo.
+WAR: es un formato de archivo que empaqueta aplicacioes web para desplegarse en servidores (tomcat, jetty, widfly)
+- Se ejecuta en un servidor web externo.
+- Si despliega con un servidor web compatible.
+
+Anotaciones:
+@SpringBootAplication :  anotacion principal de la clase principal (main) arranque de la aplicacion
+@RestController : marca o crea a la clase como controlador REST, capaz de manejar solicitudes HTTP y devuelve datos en formato JSON o XML.
+                  Cada metodo de esa clase tiene una ruta URL que responde a las solicitudes HTTP en funcion a las anotaciones @GetMapping, @PostMapping, @PutMapping, @DeleteMapping
+@GetMapping : mapea o asigna solicudes GET a metodos de controlador especificos, lo que permite crear APIs RESTful
+@PathVariable :  accede a valores dinamicos en la ruta URL para utilizar en el metodo del controlador
