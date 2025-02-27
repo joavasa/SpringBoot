@@ -1,0 +1,30 @@
+API 
+Definicion de API(interfaz de programacion de aplicaciones)
+Es un conjunto de definiciones y protocolos que facilitan la comunicacion e interaccion entre diferentes componentes de sofware(aplicacion).
+Actura como puente que permitem que aplicaciones y sistemas se comuniquen entre si.
+Ejemplo: Una aplicacion movil de metereologia(CLIENTE) hace una solicitud de datos al sistema de DB de metereologia(SERVIDOR)a trave de una API, quien gestiona la solicitud y respuesta(json) de datos al usuario.
+
+Arquitectura de una API
+- Se refiere a las reglas que rigen como se comparten los datos con los clientes.
+La aplicacion que envia la solicitud se llama: CLIENTE
+La aplicacion que envia la respuesta se llama: SERVIDOR
+
+Las arquitecturas mas comunes de una api son: SOAP, RPC, WebSocket, REST
+
+¿Que es la arquitectura de tipo REST?
+REST o RESTful(Transferencia de estado representacional), es la arquitectura mas comun para APIs debido a su escabilidad y facilidad de implementacion.
+Esta basada en estandares web que utilizan metodos HTTP( GET, PUT, DELETE, PATCH, POST) para realizar operaciones CRUD(crear, leer, actulizar, borrar), en recursos que son identificados por urls.
+REST, utiliza el concepto de manipulacion de recursos(son accedidos a trave de la red como archivos, datos, servicios) a traves de interfaces uniformes.
+Cada recurso en una arquitectura rest, tiene una representacion(informacion que se envia o recibe) asociada que puede ser en formatos json, xml, html, entre otros.
+
+Los recursos en una arquitectura Rest, son entidades de informacion identificados por urls, que pueden ser accedidos y manipulados por metodos http para realizar operacion crud.
+
+RESTRICCIONES DE UNA API REST:
+- Separacion cliente servidor: los cambios en cualquiera de los extremos no repercute en el opuesto, favoreciendo la escalabilidad y flexibilidad.
+- Interfaz uniforme: las peticiones y respuesta tienen el mismo formato y se trasmiten a trave de protocolos http.
+- Sin estado: la aplicacion del servidor no puede almacenar datos de las peticiones del cliente y cada peticion es independiente de la siguiente.
+- Sistema en capas: las solicitudes y respuesta se envian a traves de diferentes aplicaciones, por lo que requiere que tengan un formato coherente.
+
+Resumen:
+Una API, es un conjunto de reglas y definiciones que permite que diferentes aplicaciones se comuniquen entre si.
+API REST, es un estilo arquitectonico para diseñar redes y servicios web que utliza el protocolo http para acceder y manipular recursos.
