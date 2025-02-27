@@ -1,0 +1,15 @@
+Definicion de Microservicios
+Son una arquitectura de software en la que una aplicacion monolitica se descompone en pequeños servicios independientes.
+Cada servicio se centra en realizar una tarea especifica, y puede ser desarrollados, implementados y escalados de forma independiente.
+Cada microservicio puede utilizar diferentes tecnologias, lenguajes de programación.
+
+Ventajas:
+- Cada microservicio puede ser ESCALABLE de manera independiente, por lo que permite ajustar los recursos segun la demanda de cada servicio.
+- Puede ser DESPLEGADOS de manera independiente, lo que facilita la entrega y actualizacion de la aplicacion si afectar otros servicio.
+- Permite a los desarrolladores gestionar el codigo y correccion de errores de los microservicios de manera independiente.
+- Puede ser desarrollados utilizando diferentes tecnologias y lenguajes de programacion.
+- Facilita la tolerancia a fallos, ya que un fallo en un servicio no afecta a otros servicios.
+
+Desventajas:
+- Gestion de multipler microservicios puede ser compleja ya que requiere herramientas y procesos adicionales.
+- El test de prueba implica verificar indivual y una correcta interaccion entre los microservicios.
