@@ -1,0 +1,15 @@
+Arquitectura Basada En Capas
+
+Es un enfoque utlizado para diseñar sistemas de software, y se puede aplicar en el diseño y desarrollo de un microservicio.
+Se implementa con la idea de segmentar responsabilidades en distintas capas.
+
+Capas basicas:
+Capa de presentacion: en un microservicio usualmente no existe una interfaz de usuario, pero pueden tener una API de interfaz de usuario para la interaccion con el sistema.
+Capa de Logica de negocio: se compone de las clases que implementa la logica y proporciona una interfaz para interactuar con ella. *DOMAIN, EXCEPTION, SERVICE
+Capa de acceso a datos: interactua con la base de datos, en un microservicio, cada servicio puede tener su db o compartirla. *PERSISTENCE, EMPTITY
+
+Capas adicionales:
+Capa de integridad: se utilizar para integrar el microservicio con sistemas externos o con otros microservicios dentro de la misma arquitectura de microservicios. *CONFIGURATION
+                    Incluye componentes de comunicacion como clientes HTTP, cliente de servicio web, colas de mensaje, etc.
+Capa de seguridad : se encarga de implementar la autenticacion y la autorizacion, para proteger el microservicios contra accesos no autorizados. *CONFIGURATION
+                    Incluye componentes como filtros de seguridad, tockens.
