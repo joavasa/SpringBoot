@@ -1,6 +1,6 @@
-Aplicacion que gestiona una lista de alumnos mediante CRUD
+# Aplicacion que gestiona una lista de alumnos mediante CRUD
 
-Requerimientos: 
+## Requerimientos: 
 La aplicacion debe proporcionar endpoints RESTful para:
 - Mostrar todos los alumnos
 - Consultar un alumno por su email.
