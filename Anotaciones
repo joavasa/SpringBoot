@@ -13,3 +13,17 @@ Es decir, se encarga de decir que un objeto se construira a partir de la informa
 Mapea solictudes HTTP del tipo PUT, a metodos especificos en controladores en una aplicacion de sb.
 Cuando un cliente envia una solicitud de tipo put a una url especifica, est indicando que desea actualizar o reemplazar por completo un recurso en el servidor,
 con los datos proporcionados en el cuerpo de la solicitud.
+
+@DeleteMapping
+Mapea metodos de controlador especificos que se usan para eliminar un recurso en el servidor.
+Maneja solicitudes del tipo DELETE y enrutara la solicitud al metodo especificado mediante la url asignada.
+
+@PatchMapping
+Mapea solictudes HTTP del tipo PATCH, a metodos de controlador que se encargan de realizar la modificacion parcial de recursos en nuestro sistema sin enviar la representacion completa del recurso.
+A diferencia de PUT, que reemplaza por completo el recurso, Patch, permite actualizar solo algunos campos del recursoexistente. Unicamente se envia los campos a modifica en el archivo json.
+
+@RequestMapping
+Se utiliza para mapear las solicitudes HTTP a los metodos de manejo especificos del controlador.
+Se puede aplicar a nivel de clase y nivel de metodo
+Cuando se usa a nivel de clase, proporciona un ruta base comun para todos los metodos del controlador, lo que unificara el prefijo establecido en la ruta para todos los endpoints.
+Mientras que a nivel de metodo permite especificar la ruta, el metodo htpp y otros detalles en cada metodo del controlador.
