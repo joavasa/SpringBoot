@@ -1,0 +1,15 @@
+@PostMapping
+
+Mapea solictudes HTTP POST, a metodos de controlador especificos en una aplicacion de sb.
+Un metodo en nuestro controlador debe ser invocado cuando llega una solicitud POST a una url especifica.
+- Una solicitud del tipo post, es uno de los metodos http para enviar datos a un servidor y crear un nuevo recurso
+
+@RecuestBody
+Se utiliza para anotar ARGUMENTOS del metodo de controlador de solicitudes.
+Esta anotacion indica que un parametro del metodo debe estar vinculado al valor del cuerpo de la solicitud http.
+Es decir, se encarga de decir que un objeto se construira a partir de la informacion enviada en el body del request para la peticion de este servicio.
+
+@PutMapping
+Mapea solictudes HTTP del tipo PUT, a metodos especificos en controladores en una aplicacion de sb.
+Cuando un cliente envia una solicitud de tipo put a una url especifica, est indicando que desea actualizar o reemplazar por completo un recurso en el servidor,
+con los datos proporcionados en el cuerpo de la solicitud.
