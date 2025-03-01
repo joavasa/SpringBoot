@@ -1,0 +1,18 @@
+Definicion
+Nos permite obtener el estado de una respuesta de una solitud http a traves de un codigo.
+Es considerada una clase Wrapper ya que encapsula un objeto dentro de si misma.
+
+Codigos de respuesta HTTP
+Son codigos numericos que los servidores web envian a los clientes(navegadores, apliaciones) para indicar el resultado de una solicitud http.
+
+200 ok : respuesta exitosa 
+201 created : recurso creado exitosamente -> POST
+204 no content : respuesta exitosa sin contenido -> PUT, DELETE
+400 bad reques : solicitud no valida
+401 unauthorized : falta de autenticacion o credencial no valida
+403 forbidden : accedo denegado
+404 nof found: recurso no encontrado
+405 method not allowed: metodo no permitido para el recurso.
+409 conflict: conflicto en la solicitud
+422 unprocesed entity : entidad no procesable
+500 internal server error: error interno en el servidor
