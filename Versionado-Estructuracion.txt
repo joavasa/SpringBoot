@@ -1,0 +1,16 @@
+Versionado y Estructuracion
+Estas practicas ayudan a manejar cambios en la API, sin interrumpir a los clientes existentes y
+asegura una comunicacion clara sobre las diferentes versiones y funcionalidades de la api.
+
+Convension URL
+Es una forma estandarizada de estructurar los endpoints de una api, para que sean intuitivos y faciles de usar.
+Incluye el uso de rutas descriptivas, verbos http, y parametros claros.
+
+Versionado de API
+Permite que diferentes versiones de api coexistan simultaneamente
+Aseguran que los cambios en la api no rompan las aplicaciones que dependen de versiones anteriores.
+
+TIPOS DE VERSIONADO
+- Versionado en la url. protocolo/dominio/puerto/contex path/api path/v1(para indicar nuevas versiones de la api)
+- Versionado en el encabezado.
+- Versionado en parametros de consulta
