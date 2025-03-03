@@ -1,8 +1,26 @@
 Inyeccion de Dependencias
 
-Es un patron de diseño que permite a los objetos recibir sus dependencias desde el exterior en lugar de crearlas por si mismos.
-Su objetivo es promover un bajo acoplamientos entre componentes y facilitar el mantenimiento y escalabilidad del codigo.
+Es un PATRON DE DISEÑO que permite a los objetos recibir sus dependencias desde el exterior en lugar de crearlas por si mismos.
+Su objetivo es promover un bajo acoplamiento entre componentes y facilitar el mantenimiento y escalabilidad del codigo.
 Para lograr la inyeccion de dependencias es necesario utilizar una tecnica basada en el principio de IoC(Inversion de control),
-  donde el control de la creacion y gestion de objetos se invierte desde el codigo a un contenedor o frameword como Spring.
+  donde el control de la creacion y gestion de objetos se invierte desde el codigo a un contenedor o framework como Spring.
 
-Un contenedor es un componente que se encargar de gestionar el ciclo de vida de los objetos, tambien conocidos como beans, incluida su creacion, configuracion y la inyecc depend.
+Un contenedor es un componente que se encarga de gestionar el ciclo de vida de los objetos, tambien conocidos como beans, incluida su creacion, configuracion y la inyecc depend.
+
+Un beans es un objeto que tiene anotaciones especificas gestionado por el contenedor de spring 
+
+spring INCLUYE un CONTENEDOR ioc que gestiona los beans de la aplicacion. El contenedor es responsable de :
+- Crear instancias
+- Configurar dependencias.
+- Gestionar el ciclo de vida de los beans
+
+Proceso
+Le indicamos al contenedor(spring) que se encargue de CREAR E INYECTAR las instancias de las dependencias en las clases de forma automatica, en lugar de hacerlo manualmente.
+
+3 tipo de inyeccion de dependencias en spring:
+- Inyeccion por constructor(en el constructor de la clase)
+- Inyeccion por setter (a los parametros en un metodo set)
+- Inyeccion por campo ( las dependencias se inyecta directamene en los campos(atributos) de la clase ) 
+
+Resumiendo:
+Cuando utilizamos Inyeccion de dependencias, estamos haciendo uso del principio inversion de control(Ioc)
