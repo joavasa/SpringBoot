@@ -1,0 +1,8 @@
+Inyeccion de Dependencias
+
+Es un patron de diseño que permite a los objetos recibir sus dependencias desde el exterior en lugar de crearlas por si mismos.
+Su objetivo es promover un bajo acoplamientos entre componentes y facilitar el mantenimiento y escalabilidad del codigo.
+Para lograr la inyeccion de dependencias es necesario utilizar una tecnica basada en el principio de IoC(Inversion de control),
+  donde el control de la creacion y gestion de objetos se invierte desde el codigo a un contenedor o frameword como Spring.
+
+Un contenedor es un componente que se encargar de gestionar el ciclo de vida de los objetos, tambien conocidos como beans, incluida su creacion, configuracion y la inyecc depend.
