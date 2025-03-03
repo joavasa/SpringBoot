@@ -1,0 +1,8 @@
+@Service
+Al decorar una clase con @Service, indicamos al contenedor de spring, que esa clase debe ser tratada como un beans de servicio.
+Esto significa que spring gestionara automaticamente la creacion de instancias de esa clase y podra inyectarlas en otra parte de la aplicacion cuando sea necesario.
+
+@Autowired
+Le indica a srping que debe inyectar automaticamente una dependencia en el lugar donde se declara.
+Esta inyeccion puede hacerse en un contructor, un metodo setter, o un campo de la clase.
+
