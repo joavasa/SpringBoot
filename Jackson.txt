@@ -1,0 +1,17 @@
+ctrl + alt + l (para dar formato en archivos json.)
+
+Jackson es una biblioteca utilizada en java para el procesamiento de datos en formato json.
+
+Funcionalidades:
+Serializacion: convierte una lista de java en un archivo json
+- Convierte objetos java en representacion json para ser almacenadas o transmitidas.
+- Es el proceso de convertir una objeto en memoria(lista de java) en un formato que pueda ser almacenado o transmitido como un archivo JSON, XML, o flujo de byte.
+- Cuando se serializa una lista de java java, se esta convirtiendo en un archivo json.
+
+Deserializacion: convierte un archivo json en una lista de java.
+- Transforma datos json en objetos java
+- Es el proceso inverso a la serializacion. Consiste en tomar un archivo json y convertirlo nuevamente en un objeto de memoria(como una lista de java)
+
+@Primary
+Se utliza para resolver conflictos cuando existen multiples beans del mismo tipo en la aplicacion.
+Cuano spring encuentra varios candidatos para la inyeccion de dependencias, @Primary indica cual de ellos debera ser preferido de forma predeterminada
