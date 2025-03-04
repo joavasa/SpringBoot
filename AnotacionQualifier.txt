@@ -1,0 +1,5 @@
+Mientras que @Autowired gestiona la inyeccion de dependencias de forma automatica, @Qualifier indica cual de los bean disponibles se debe inyectar.
+
+@Primary se utilizar para difinir un bean prioritario por defecto
+@Qualifier permite especificar cual bean usar cuando hay multiples candidatos, independientemente de la priioridad.
+
